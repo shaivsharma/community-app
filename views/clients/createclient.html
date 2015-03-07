@@ -68,6 +68,15 @@
 	                      </small>
 		                </span>
 	            </div>
+	       
+                <label class="control-label col-sm-2 ng-binding" for="email">Email<span class="required">*</span></label>
+
+                <div class="col-sm-3">
+                    <input type="email" id="email" name="email" value="" ng-model="formData.email" class="form-control ng-pristine ng-valid-email ng-valid ng-valid-required" required="" late-validate="">
+                </div>
+                <div class="col-sm-3">
+                    <form-validate valattributeform="createclientform" valattribute="email"><span ng-show="createclientform.email.$invalid" class="ng-scope ng-hide"><small class="error ng-binding ng-hide" ng-show="createclientform.email.$error.req || rc.createclientform.attempted">Required Field</small></span></form-validate></div>
+            </div>
 	        </div>
 	        
 	        <div class="form-group">
